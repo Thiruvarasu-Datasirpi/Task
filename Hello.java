@@ -16,32 +16,29 @@ public class Hello {
     int[] sumArray = { sum };
     System.out.println(" Sum of elements in the integer array : " + Arrays.toString(sumArray));
 
-    LinkedList<Integer> ll = new LinkedList<Integer>();
+    LinkedList<Integer> linkedList = new LinkedList<Integer>();
 
-    ll.add(1);
-    ll.add(2);
-    ll.add(3);
-    ll.add(4);
+    linkedList.add(1);
+    linkedList.add(2);
+    linkedList.add(3);
+    linkedList.add(4);
     Stack<Integer> stack = new Stack<>();
 
-    for (Integer element : ll) {
+    for (Integer element : linkedList) {
       stack.push(element);
 
     }
 
     int size = stack.size();
     int[] array = new int[size];
-    
 
     for (int i = 0; i < size; i++) {
       array[i] = stack.pop();
-  }
+    }
 
-  
-  for (int i = 0; i < size; i++) {
-      System.out.println("Reversed elements " +array[i]);
-  }
-    
+    for (int i = 0; i < size; i++) {
+      System.out.println("Reversed elements " + array[i]);
+    }
 
     Queue<Integer> queue = new LinkedList<>();
     queue.add(1);
@@ -61,26 +58,21 @@ public class Hello {
       }
       index++;
 
-    
-
     }
 
     Map<Integer, String> map = new HashMap<>();
 
-    
     map.put(1, "Apple");
     map.put(2, "Banana");
     map.put(3, "Mango");
     map.put(4, "Guava");
-   
 
-    
-   index = 1;
+    index = 1;
     for (Map.Entry<Integer, String> entry : map.entrySet()) {
-        if (index % 2 != 0) {
-            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-        }
-        index++;
+      if (index % 2 != 0) {
+        System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+      }
+      index++;
     }
 
   }
