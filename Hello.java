@@ -13,7 +13,9 @@ public class Hello {
         for(int i=0;i<s.length;i++){
             sum=sum+s[i];
         }
-        
+
+        int[] sumArray = {sum};
+          System.out.println(" Sum of elements in the integer array : "+Arrays.toString(sumArray));
 
         LinkedList<Integer> ll=new LinkedList<Integer>();  
 
@@ -22,7 +24,7 @@ public class Hello {
         ll.add(3);
         ll.add(4);
     
-         System.out.println(ll);
+        // System.out.println(ll);
         /* while(!ll.isEmpty()){
           int temp = ll.pop();
          System.out.print(temp);   
@@ -34,12 +36,14 @@ public class Hello {
         
         for ( Integer element : ll) {
             stack.push(element);
+
         }
 
         // Print the stack
-        System.out.println("Elements in the stack:");
+      //  System.out.println("Elements in the stack:");
         while (!stack.isEmpty()) {
-            System.out.println(stack.pop());
+            System.out.println("reversed elements : " +stack.pop());
+        
         }
 
         Queue<Integer> queue = new LinkedList<>();
@@ -57,12 +61,12 @@ public class Hello {
       
         for (Integer value : queue) {
             if (index % 2 == 0) {
-                System.out.println("Value at index " + index + ": " + value);
+                System.out.println("Value at even index " + index + ": " + value);
                 evenindex.add(value);
             }
             index++;
 
-            System.out.println(evenindex);
+           // System.out.println(evenindex);
             
 
 
@@ -75,8 +79,8 @@ public class Hello {
         map.put(i,ll.get(i));
     }
       
-    System.out.println("the sum of elements"+sum);
-      System.out.println("Map : " + map);
+  
+      System.out.println("Map odd elements : " + map);
 
 
        
