@@ -32,7 +32,6 @@ public class Hello {
         } */
         Stack<Integer> stack = new Stack<>();
 
-        // Add elements from linked list to stack
         
         for ( Integer element : ll) {
             stack.push(element);
@@ -53,7 +52,7 @@ public class Hello {
         queue.add(4);
         queue.add(5);
 
-        // Iterate through the queue and print values at odd indices
+       
         Queue<Integer> evenindex = new LinkedList<>();
        
         
